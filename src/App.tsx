@@ -2,12 +2,12 @@ import { CSSProperties, useMemo, useState } from 'react'
 import catAnimation from '../public/catValentine.gif'
 
 const rejections: string[] = [
-    'No no no',
-    'Are you sure?',
-    'No, think again',
-    "I'm going to cry now",
-    "I can't believe",
-    'PLEASE!!!',
+    'ne ne ne',
+    'уверена?',
+    'нет, подумай',
+    "обидно будет",
+    "сопьюсь",
+    'пожалуйста!!!',
 ]
 
 interface Position {
@@ -70,12 +70,12 @@ function App() {
         <div className="main">
             {isValentine ? (
                 <>
-                    <h2 className="title">I love you &hearts; </h2>
+                    <h2 className="title"> УРА WW &hearts; </h2>
                     <img alt="cat animation" src={catAnimation} />
                 </>
             ) : (
                 <>
-                    <h2 className="title">Polina will be my</h2>
+                    <h2 className="title">Will be my</h2>
                     <h1 className="valentine">Valentine?</h1>
                     <button
                         style={stylesBtnAgree}
@@ -84,7 +84,7 @@ function App() {
                             count === rejections.length ? 'last' : ''
                         }`}
                     >
-                        Yes {exclamation}
+                        Да {exclamation}
                     </button>
                     {count !== 6 && (
                         <button
